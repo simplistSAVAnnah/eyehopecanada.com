@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Carousel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="onLoad()" onresize="onResize()">
+  <!-- To make responsive have carousel wrapper maintain same aspect ratio
+  https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css -->
+  <div class="carousel-wrapper">
+      <h1 id="projects-header">Projects</h1>
+      <div class="carousel-controls">
+        <img id="control-left" class="control" src="images/left-arrow-icon.png" alt="" onclick="moveLeft()">
+        <img id="control-right" class="control" src="images/right-arrow-icon.png" alt="" onclick="moveRight()">
+      </div>
+      <div id="carousel" class="carousel">
+        <div id="card-1" class="card"></div>
+        <div id="card-2" class="card">
+        </div>
+        <div id="card-3" class="card"></div>
+        <div id="card-4" class="card"></div>
+      </div>
+  </div>
+
+  <script src="carousel.js" charset="utf-8"></script>
+</body>
+
+</html>

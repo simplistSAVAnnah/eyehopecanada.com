@@ -1,0 +1,518 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/** Fonts **/
+h1 {
+  color: #2F398C;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #2F398C;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #6E75B0;
+  opacity: 75%;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h4 {
+  color: #6E75B0;
+  opacity: 75%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h5 {}
+
+h6 {
+  font-size: 16px;
+  color: #A7AAA9;
+}
+
+p {
+  font-size: 16px;
+}
+
+.quote {
+  color: grey;
+  font-size: 22px;
+}
+
+.project-logo {
+  height: 7vh;
+  width: auto;
+  margin-bottom: 2%;
+}
+
+/** Start Nav Menu**/
+.nav-menu {
+  overflow: hidden;
+  background-color: rgba(245, 245, 247,0.95);
+}
+
+.nav-menu a {
+  float: left;
+  display: block;
+}
+
+.logo {
+  height: 4.5vh;
+  width: auto;
+  margin-left: 2.7vw;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.nav-menu-right {
+  float: right;
+}
+
+.nav-menu-right a{
+  color: #3643b5;
+  text-align: center;
+  margin-right: 3vw;
+  text-decoration: none;
+  margin-top: 1.8vh;
+  font-size: 14px;
+  opacity: 60%;
+}
+
+.nav-menu a:hover {
+  opacity: 100%;
+}
+
+.nav-menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  .nav-menu a {
+    display: none;
+    margin-left: 6vw;
+  }
+
+  .nav-menu-right {
+    float: left;
+  }
+
+  .nav-menu-right a {
+    margin-bottom: 4vh;
+    margin-top: 0;
+    width: 100%;
+}
+
+.nav-menu-right a:hover {
+    opacity: 50%;
+}
+
+  .nav-menu a.icon {
+    float: right;
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 3vw;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive {
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive a:hover {
+    opacity: 75%;
+  }
+}
+
+/** End Nav Menu **/
+
+/** Start Consistent Metrics**/
+
+.metric-heading {
+  color: #2F398C;
+  font-weight: 800;
+  margin: 0;
+}
+
+.metric-sub {
+  color: grey;
+}
+
+.metric-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.metric-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.metric-col {
+  float: left;
+  width: 15%;
+  margin-right: 5%;
+  border-right: solid 2px #B7BCDA;
+  padding-right: 5%;
+}
+
+.last-metric-col {
+  margin-right: 0;
+  border-right: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .metric-row {
+    margin-top: 5%;
+  }
+
+  .metric-col {
+    float: left;
+    width: 40%;
+    padding-right: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+  }
+
+  .last-metric-col {
+    border-right: solid 2px #B7BCDA;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .metric-row {
+    margin-top: 5%;
+  }
+
+  .metric-col {
+    width: 100%;
+    margin-right: 0;
+    border-right: white;
+    padding-right: 0;
+    margin-bottom: 5%;
+  }
+}
+
+/** End Consistent Metrics**/
+
+/** Start Consistent Sponsors**/
+
+.sponsor-logo {
+  height: 10vh;
+}
+
+.sponsor-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.sponsor-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sponsor-col {
+  float: left;
+  text-align: center;
+  width: 14%;
+  margin-right: 1.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sponsor-col {
+    float: left;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sponsor-col {
+    width: 45%;
+    float: left;
+  }
+}
+
+/** End Consistent Sponsors**/
+
+/** Start Consistent Gallery**/
+
+.gallery-img {
+  width: 20vw;
+}
+
+.gallery-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 7%;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery-col {
+  float: left;
+  text-align: center;
+  width: 23%;
+  margin-right: 1.5%;
+}
+
+
+@media screen and (max-width: 767px) {
+  .gallery-col {
+    width: 45%;
+    float: left;
+    margin-bottom: 5%;
+  }
+
+  .gallery-img {
+    width: 35vw;
+  }
+}
+
+/** End Consistent Gallery**/
+
+/** Start Alert **/
+
+.alert {
+  background-color: #3643b5;
+  text-align: center;
+  padding: 0.4%;
+}
+
+.alert-text {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+/** End Alert **/
+
+/** Start Latest Project **/
+
+.latest-project-box {
+  width: 90%;
+  background-image: url("images/latest-project-box-background.svg");
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 4% 0 5% 0;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.latest-project-heading {
+  color: white;
+  margin: 0 0 1.5% 0;
+}
+
+.latest-project-sub {
+  color: white;
+  margin: 0 0 4% 0;
+  font-size: 24px;
+}
+
+.latest-project-button {
+  border: solid 1.8px white;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5%;
+}
+
+.latest-project-button:hover {
+  background-color: white;
+  color: #3643b5;
+}
+
+/** End Latest Project **/
+
+/** Start Resilience **/
+
+#resilience {
+  padding: 0% 5% 0% 5%;
+  margin-top: 12%;
+}
+
+/** End Resilience **/
+
+/** Start Global Health Panel **/
+
+#global-health {
+  padding: 0% 5% 0% 5%;
+  margin-top: 12%;
+}
+
+.global-health-row {
+  width: 100%;
+}
+
+.global-health-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.global-health-body-col {
+  float: left;
+}
+
+.global-health-body-left {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.global-health-body-right {
+  width: 40%;
+}
+
+#global-health-img-1 {
+  width: 35vw;
+}
+
+@media screen and (max-width: 767px) {
+  .global-health-body-col {
+    width: 100%;
+  }
+
+  #global-health-img-1 {
+    width: 70vw;
+    margin-top: 4%;
+  }
+}
+
+/** End Global Health Panel **/
+
+/** Start Careers In Medicine Panel **/
+
+#careers-in-medicine {
+  padding: 0% 5% 0% 5%;
+  margin-top: 12%;
+}
+
+.careers-in-medicine-row {
+  width: 100%;
+}
+
+.careers-in-medicine-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.careers-in-medicine-body-col {
+  float: left;
+}
+
+.careers-in-medicine-body-left {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.careers-in-medicine-body-right {
+  width: 40%;
+}
+
+#careers-in-medicine-img-1 {
+  width: 35vw;
+}
+
+@media screen and (max-width: 767px) {
+  .careers-in-medicine-body-col {
+    width: 100%;
+  }
+
+  #careers-in-medicine-img-1 {
+    width: 70vw;
+    margin-top: 4%;
+  }
+}
+
+/** End Careers in Medicine Panel **/
+
+/** Start Artists of Instagram **/
+
+#artists-ig {
+  padding: 0% 5% 0% 5%;
+  margin-top: 12%;
+}
+
+.artists-ig-gallery-img {
+  width: 30vw;
+  margin: auto;
+}
+
+.artists-ig-gallery-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 7%;
+}
+
+.artists-ig-gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.artists-ig-gallery-col {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+
+@media screen and (max-width: 767px) {
+  .artists-ig-gallery-col {
+    width: 100%;
+    float: left;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .artists-ig-gallery-img {
+    width: 100vw;
+    margin: auto;
+  }
+}
+
+
+/** End Artists of Instaragon **/
