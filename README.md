@@ -2,7 +2,7 @@
 
 This repository contains the code for the remodelled Eye Hope Canada website. The website is still under construction.
 
-## Designers:
+## Designers
 Samantha Mac, Vanessa Mac
 
 ## Front-End Developers
