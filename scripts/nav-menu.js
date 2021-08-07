@@ -6,3 +6,17 @@ function myFunction() {
     x.className = "nav-menu";
   }
 }
+
+function openDropdown() {
+  if (window.innerWidth > 767) {
+    document.getElementById("dropdown").style.visibility = "visible";
+    document.getElementById("menu-projects").style.opacity = "100%";
+  }
+}
+
+function closeDropdown() {
+  if (window.innerWidth > 767) {
+    document.getElementById("dropdown").style.visibility = "hidden";
+    document.getElementById("menu-projects").style.opacity = "60%";
+  }
+}

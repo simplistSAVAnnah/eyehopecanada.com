@@ -17,9 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-
-
+<body onload="onLoad()" onresize="onResize()">
 
   <!-- Start Landing Page -->
   <section id="landing-page">
@@ -122,9 +120,59 @@
 
   <!-- Start Projects -->
   <section id="project-page">
-    <h2>Latest Projects</h2>
-    <h4>View the projects page <a href="projects.html" target="_blank">here</a> </h4>
-    <h4>Insert carousel here displaying most recent projects</h4>
+    <h2 class="project-main-header">Latest Projects</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel-controls">
+        <img id="control-left" class="control" src="images/left-arrow-icon.png" alt="" onclick="moveLeft()">
+        <img id="control-right" class="control" src="images/right-arrow-icon.png" alt="" onclick="moveRight()">
+      </div>
+      <div id="carousel" class="carousel">
+        <div id="card-1" class="card row">
+          <div class="project-img-wrapper column">
+            <img class="project-img" src="images/yogurt.jpg" alt="">
+          </div>
+          <div class="project-info column">
+            <h3 id="project-header-1" class="project-header">Event</h3>
+            <h4 id="project-date-1" class="project-date">Date</h4>
+            <p id="project-description-1" class="project-description">Description</p>
+            <a id="project-button-1" class="project-button" href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+          </div>
+        </div>
+        <div id="card-2" class="card row">
+          <div class="project-img-wrapper column">
+            <img class="project-img" src="images/yogurt.jpg" alt="">
+          </div>
+          <div class="project-info column">
+            <h3 id="project-header-2" class="project-header">Event</h3>
+            <h4 id="project-date-2" class="project-date">Date</h4>
+            <p id="project-description-2" class="project-description">Description</p>
+            <a id="project-button-2" class="project-button" href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+          </div>
+        </div>
+        <div id="card-3" class="card row">
+          <div class="project-img-wrapper column">
+            <img class="project-img" src="images/yogurt.jpg" alt="">
+          </div>
+          <div class="project-info column">
+            <h3 id="project-header-3" class="project-header">Event</h3>
+            <h4 id="project-date-3" class="project-date">Date</h4>
+            <p id="project-description-3" class="project-description">Description</p>
+            <a id="project-button-3" class="project-button" href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+          </div>
+        </div>
+        <div id="card-4" class="card row">
+          <div class="project-img-wrapper column">
+            <img class="project-img" src="images/yogurt.jpg" alt="">
+          </div>
+          <div class="project-info column">
+            <h3 id="project-header-4" class="project-header">Event</h3>
+            <h4 id="project-date-4" class="project-date">Date</h4>
+            <p id="project-description-4" class="project-description">Description</p>
+            <a id="project-button-4" class="project-button" href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Projects -->
 
@@ -314,22 +362,7 @@
   <script src="scripts/typeWritingHeader.js"></script>
   <script src="scripts/metrics.js"></script>
   <script src="scripts/team.js" charset="utf-8"></script>
-
-  <script type="text/javascript">
-    function openDropdown() {
-      if (window.innerWidth > 767) {
-        document.getElementById("dropdown").style.visibility = "visible";
-        document.getElementById("menu-projects").style.opacity = "100%";
-      }
-    }
-
-    function closeDropdown() {
-      if (window.innerWidth > 767) {
-        document.getElementById("dropdown").style.visibility = "hidden";
-        document.getElementById("menu-projects").style.opacity = "60%";
-      }
-    }
-  </script>
+  <script src="scripts/carousel.js" charset="utf-8"></script>
 
 </body>
 
