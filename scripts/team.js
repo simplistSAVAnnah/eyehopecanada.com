@@ -3,7 +3,12 @@ function displayName(name, position, link) {
   linkedin = document.getElementById("linkedin-url");
   linkedinIcon = document.getElementById("team-linkedin");
 
-  text.innerHTML = name + " | " + position;
-  linkedin.setAttribute("href", link);
-  linkedinIcon.style.visibility = "visible";
+  if (link == 'empty') {
+    text.innerHTML = name + " | " + position;
+    linkedinIcon.style.visibility = "hidden";
+  } else {
+    text.innerHTML = name + " | " + position;
+    linkedin.setAttribute("href", link);
+    linkedinIcon.style.visibility = "visible";
+  }
 }

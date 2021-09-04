@@ -32,7 +32,7 @@ const updateInc = (target, count) => {
 }
 
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 300) {
+  if (document.documentElement.scrollTop > 200) {
     //loop through the node list counter
     counters.forEach(counter => {
       const updateCount = () => {

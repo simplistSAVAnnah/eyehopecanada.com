@@ -1,3 +1,10 @@
+history.scrollRestoration = "manual";
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+
 function myFunction() {
   var x = document.getElementById("nav-menu-id");
   if (x.className === "nav-menu") {
